@@ -1,0 +1,25 @@
+{
+  "name": "spotifly-backend",
+  "version": "1.0.0",
+  "description": "Node/Express/Mongo Backend for Spotifly, a music streaming app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esaltzm/spotifly-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esaltzm/spotifly-backend/issues"
+  },
+  "homepage": "https://github.com/esaltzm/spotifly-backend#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0"
+  }
+}
