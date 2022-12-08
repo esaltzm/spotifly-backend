@@ -34,3 +34,14 @@ router.post('/', async (req, res, next) => {
         next(err)
     }
 })
+
+router.delete('/:username', async (req, res, next) => {
+    try {
+        const username = req.params.username
+        const deleteUser = await User.findOneAndDelete({username: username})
+        res.json(deleteUser)
+    }
+    catch {
+        next(err)
+    }
+})
