@@ -1,7 +1,66 @@
 [
     {
         "username": "esaltzm",
-        "playlists": []
+        "playlists": [
+            {
+                "name": "winter vibes",
+                "songs": [
+                    {
+                        "name": "Kokomo, IN",
+                        "artist": "Japanese Breakfast",
+                        "album": "Jubilee",
+                        "duration": 666,
+                        "genre": "Indie",
+                        "spotifyID": "qwriltqhkwaegu129836"
+                    },
+                    {
+                        "name": "Certainty",
+                        "artist": "Big Thief",
+                        "album": "Dragon New Warm Mountain I Believe In You",
+                        "duration": 420,
+                        "genre": "Folk",
+                        "spotifyID": "awrfgkuykefzuagriew197236"
+                    },
+                    {
+                        "name": "I Know The End",
+                        "artist": "Phoebe Bridgers",
+                        "album": "Punisher",
+                        "duration": 666,
+                        "genre": "Indie",
+                        "spotifyID": "q3894pfhqrf23928347129"
+                    }
+                ]
+            },
+            {
+                "name": "my top songs",
+                "songs": [
+                    {
+                        "name": "Get Into It (Yuh)",
+                        "artist": "Doja Cat",
+                        "album": "Planet Her",
+                        "duration": 666,
+                        "genre": "Pop",
+                        "spotifyID": "2r4q9y842ef1297312"
+                    },
+                    {
+                        "name": "detonate",
+                        "artist": "Charli XCX",
+                        "album": "how i'm feeling now",
+                        "duration": 666,
+                        "genre": "Pop",
+                        "spotifyID": "23r89y21489adfjkadf"
+                    },
+                    {
+                        "name": "Gross",
+                        "artist": "Princess Nokia",
+                        "album": "Everything Sucks",
+                        "duration": 666,
+                        "genre": "Rap",
+                        "spotifyID": "3248472021adhksgfweF"
+                    }
+                ]
+            }
+        ]
     },
     {
         "username": "aaixn",
