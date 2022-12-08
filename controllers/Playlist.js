@@ -53,4 +53,20 @@ router.put('/:id/add', async (req, res, next) => {
     }
 })
 
+router.put('/:id/remove', async (req, res, next) => {
+    try {
+        const playlist = await Playlist.findById(req.params.id)
+        const song = playlist.find(song => song._id === req.body.song._id)
+        const newSongs = [...playlist].splice(playlist.indexOf(song), 1)
+        const updatedPlaylist = await Playlist.findByIdAndUpdate(
+            req.params.id,
+            { songs: newSongs },
+            { new: true }
+        )
+        updatedPlaylist ? res.status(201).json(updatedPlaylist) : res.sendStatus(404)
+    } catch (err) {
+        next(err)
+    }
+})
+
 module.exports = router
