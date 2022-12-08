@@ -58,30 +58,3 @@ const addSongs = async () => {
 }
 
 addSongs()
-
-// Add songs to their playlist
-
-// const songsWithPlaylist = []
-// data.forEach(user => {
-//     user.playlists.forEach(playlist => {
-//         playlist.songs.forEach(song => songsWithPlaylist.push({ ...song, playlistName: playlist.name }))
-//     })
-// })
-
-// songsWithPlaylist.forEach(song => {
-//     console.log(song)
-//     Song.findOne({ name: song.playlistName })
-//         .then(found => {
-//             console.log(found)
-//             return Playlist.findOneAndUpdate(
-//                 { name: song.playlistName },
-//                 { $push: { songs: found._id } },
-//                 { new: true }
-//             )
-//         })
-//         .then(console.log)
-//         .catch(console.error)
-//         .finally(() => {
-//             process.exit()
-//         })
-// })
