@@ -9,5 +9,5 @@ const playlistSchema = new Schema({
     }]
 }, { timestamps: true })
 
-const User = mongoose.model('User', userSchema)
-module.exports = User
+const Playlist = mongoose.model('Playlist', playlistSchema)
+module.exports = Playlist
