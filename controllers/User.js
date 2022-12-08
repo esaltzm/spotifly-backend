@@ -5,7 +5,7 @@ const router = express.Router()
 
 router.get('/', async (req, res, next) => {
     try {
-        const users = await User.find({})
+        const users = await User.find({}).populate('playlists')
         res.json(users)
     }
     catch (err) {
