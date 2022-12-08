@@ -1,6 +1,6 @@
-const express=require('express')
-const router=express.Router()
-const Song=require('../models/Song')
+const express = require('express')
+const router = express.Router()
+const Song = require('../models/Song')
 
 router.post('/:id', async (req, res, next) => {
     try {
@@ -11,9 +11,10 @@ router.post('/:id', async (req, res, next) => {
     }
 })
 
+
 router.delete('/:id', async (req, res, next)=> {
     try {
-        const deleteSong = await Song.findOneAndDelete({_id: req.params.id})
+        const deleteSong = await Song.findOneAndDelete({ _id: req.params.id })
         if (deleteSong) {
             res.sendStatus(204)
         }
@@ -36,3 +37,6 @@ router.put('/:id', async (req, res, next)=> {
         next(err)
     }
 })
+
+module.exports = router
+
