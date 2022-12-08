@@ -2,12 +2,30 @@ const mongoose = require("../db/connection");
 const Schema = mongoose.Schema;
 
 const songSchema = new Schema({
-    name: String,
-    artist: String,
-    album: String,
-    duration: Number, // in seconds
-    genre: String,
-    spotifyID: String,
+    name: {
+        type: String,
+        required: true
+    },
+    artist: {
+        type: String,
+        required: true
+    },
+    album: {
+        type: String,
+        required: true
+    },
+    duration: {
+        type: Number,
+        required: true
+    }, // in seconds
+    genre: {
+        type: String,
+        required: true
+    },
+    spotifyID: {
+        type: String,
+        required: true
+    },
     playlists: [{
         type: Schema.Types.ObjectId,
         ref: 'Playlist'
