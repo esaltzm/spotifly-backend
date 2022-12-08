@@ -64,7 +64,82 @@
     },
     {
         "username": "aaixn",
-        "playlists": []
+        "playlists": [
+            {
+                "name": "puh",
+                "songs": [
+                    {
+                        "name": "Like You Do",
+                        "artist": "Joji",
+                        "album": "Nectar",
+                        "duration": 240,
+                        "genre": "Viral Pop",
+                        "spotifyID": "j240"
+                    },
+                    {
+                        "name": "The Most Beautiful Thing",
+                        "artist": "Bruno Major",
+                        "album": "To Let A Good Thing Die",
+                        "duration": 235,
+                        "genre": "Pop",
+                        "spotifyID": "b235"
+                    },
+                    {
+                        "name": "Good News",
+                        "artist": "Mac Miller",
+                        "album": "Circles",
+                        "duration": 342,
+                        "genre": "Rap",
+                        "spotifyID": "m342"
+                    },
+                    {
+                        "name": "Come to Life",
+                        "artist": "Kanye West",
+                        "album": "Donda",
+                        "duration": 310,
+                        "genre": "Rap",
+                        "spotifyID": "k310"
+                    }
+                ]
+            },
+            {
+                "name": "pung",
+                "songs": [
+                    {
+                        "name": "SHOWTIME!",
+                        "artist": "JELEEL!",
+                        "album": "SHOWTIME!",
+                        "duration": 120,
+                        "genre": "Rap",
+                        "spotifyID": "j120"
+                    },
+                    {
+                        "name": "E-ER (feat. Lil Yachty)",
+                        "artist": "Ski Mask The Slump God",
+                        "album": "FAMILY",
+                        "duration": 163,
+                        "genre": "Rap",
+                        "spotifyID": "s163"
+                    },
+                    {
+                        "name": "Motley Crew",
+                        "artist": "Post Malone",
+                        "album": "Motley Crew",
+                        "duration": 184,
+                        "genre": "Rap",
+                        "spotifyID": "p184"
+                    },
+                    {
+                        "name": "family ties (with Kendrick Lamar)",
+                        "artist": "Baby Keem",
+                        "album": "family ties (with Kendrick Lamar)",
+                        "duration": 252,
+                        "genre": "Rap",
+                        "spotifyID": "b252"
+                    }
+                ]
+            }
+        ]
     },
     {
         "username": "mgreen1092",
