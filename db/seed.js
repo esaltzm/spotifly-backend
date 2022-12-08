@@ -12,12 +12,13 @@ const users = data.map(user => {
     }
 })
 
-User.deleteMany({}).then(() => {
-    User.create(users).then(users => {
-        // console.log(users)
-        process.exit()
-    })
-})
+const addUsers = async () => {
+    await User.deleteMany({})
+    const newUsers = await User.create(users)
+    console.log(newUsers)
+}
+
+addUsers()
 
 // Create empty playlists
 
@@ -32,12 +33,13 @@ const emptyPlaylists = playlists.map(playlist => {
     }
 })
 
-Playlist.deleteMany({}).then(() => {
-    Playlist.create(emptyPlaylists).then(playlists => {
-        // console.log(playlists)
-        process.exit()
-    })
-})
+const addPlaylists = async () => {
+    await Playlist.deleteMany({})
+    const newPlaylists = Playlist.create(emptyPlaylists)
+    console.log(newPlaylists)
+}
+
+addPlaylists()
 
 // Create songs
 
@@ -49,10 +51,37 @@ data.forEach(user => {
     })
 })
 
-Song.deleteMany({}).then(() => {
-    Song.create(songs).then(songs => {
-        // console.log(songs)
-        process.exit()
-    })
-})
+const addSongs = async () => {
+    await Song.deleteMany({})
+    const newSongs = await Song.create(songs)
+    console.log(newSongs)
+}
 
+addSongs()
+
+// Add songs to their playlist
+
+// const songsWithPlaylist = []
+// data.forEach(user => {
+//     user.playlists.forEach(playlist => {
+//         playlist.songs.forEach(song => songsWithPlaylist.push({ ...song, playlistName: playlist.name }))
+//     })
+// })
+
+// songsWithPlaylist.forEach(song => {
+//     console.log(song)
+//     Song.findOne({ name: song.playlistName })
+//         .then(found => {
+//             console.log(found)
+//             return Playlist.findOneAndUpdate(
+//                 { name: song.playlistName },
+//                 { $push: { songs: found._id } },
+//                 { new: true }
+//             )
+//         })
+//         .then(console.log)
+//         .catch(console.error)
+//         .finally(() => {
+//             process.exit()
+//         })
+// })
