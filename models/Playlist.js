@@ -2,7 +2,10 @@ const mongoose = require("../db/connection");
 const Schema = mongoose.Schema;
 
 const playlistSchema = new Schema({
-    name: String,
+    name: {
+        type: String,
+        required: true
+    },
     songs: [{
         type: Schema.Types.ObjectId,
         ref: 'Song'
