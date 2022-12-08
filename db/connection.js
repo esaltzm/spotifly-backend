@@ -1,9 +1,9 @@
 //connect to mongo
 
 const mongoose = require('mongoose')
-require('dotenvv').config()
+require('dotenv').config()
 
-mongoose.Promise=Promise
+mongoose.Promise = Promise
 
 let mongoURI = ""
 if (process.env.NODE_ENV === "production") {
@@ -19,4 +19,4 @@ mongoose
   )
   .catch((error) => console.log('Connection failed!', error));
 
-  module.exports = mongoose;
+module.exports = mongoose;
