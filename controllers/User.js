@@ -12,3 +12,14 @@ router.get('/', async (req, res, next) => {
         next(err)
     }
 })
+
+router.get('/:username', async (req, res, next) => {
+    try {
+        const username = req.params.username
+        const user = await User.findOne({usernname: username})
+        res.json(user)
+    }
+    catch (err) {
+        next(err)
+    }
+})
