@@ -4,7 +4,7 @@ const router = express.Router()
 
 router.get('/', async (req, res, next) => {
     try {
-        const playlists = await Playlist.find({})
+        const playlists = await Playlist.find({}).populate('songs')
         res.json(playlists)
     } catch (err) {
         next(err)
