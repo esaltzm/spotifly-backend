@@ -23,3 +23,14 @@ router.get('/:username', async (req, res, next) => {
         next(err)
     }
 })
+
+router.post('/', async (req, res, next) => {
+    try {
+        const newUserInfo = req.body
+        const newUser = await User.create(newUserInfo)
+        res.json(newUser)
+    }
+    catch (err) {
+        next(err)
+    }
+})
