@@ -2,7 +2,7 @@ const express=require('express')
 const router=express.Router()
 const Song=require('../models/Song')
 
-router.post('/playlist/:id', async (req, res) => {
+router.post('/:id', async (req, res, next) => {
     try {
         const newSong = await Song.create(req.body)
         res.status(201).json(newSong)
@@ -11,12 +11,27 @@ router.post('/playlist/:id', async (req, res) => {
     }
 })
 
-router.delete('/song/:id', async (req, res)=> {
+router.delete('/:id', async (req, res, next)=> {
     try {
         const deleteSong = await Song.findOneAndDelete({_id: req.params.id})
         if (deleteSong) {
             res.sendStatus(204)
         }
+    } catch (err) {
+        next(err)
+    }
+})
+
+router.put('/:id', async (req, res, next)=> {
+    try {
+        const updateSong= Song.findOneAndUpdate({_id: req.params.id}, req.body, {
+            new: true
+        })
+        if(updateSong) {
+            res.json(updateSong)
+        } else (
+            res.sendStatus(404)
+        )
     } catch (err) {
         next(err)
     }
