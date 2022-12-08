@@ -70,34 +70,34 @@
                 "songs": [
                     {
                         "name": "Like You Do",
-                        "artist": "Joji",
-                        "album": "Nectar",
+                        "artist": ["Joji"],
+                        "album": ["Nectar"],
                         "duration": 240,
-                        "genre": "Viral Pop",
+                        "genre": ["R&B", "Soul"],
                         "spotifyID": "j240"
                     },
                     {
                         "name": "The Most Beautiful Thing",
-                        "artist": "Bruno Major",
-                        "album": "To Let A Good Thing Die",
+                        "artist": ["Bruno Major"],
+                        "album": ["To Let A Good Thing Die"],
                         "duration": 235,
-                        "genre": "Pop",
+                        "genre": ["Indie"],
                         "spotifyID": "b235"
                     },
                     {
                         "name": "Good News",
-                        "artist": "Mac Miller",
-                        "album": "Circles",
+                        "artist": ["Mac Miller"],
+                        "album": ["Circles", "Circles (Deluxe)"],
                         "duration": 342,
-                        "genre": "Rap",
+                        "genre": ["Hip-Hop", "Rap"],
                         "spotifyID": "m342"
                     },
                     {
                         "name": "Come to Life",
-                        "artist": "Kanye West",
-                        "album": "Donda",
+                        "artist": ["Kanye West"],
+                        "album": ["Donda"],
                         "duration": 310,
-                        "genre": "Rap",
+                        "genre": ["Hip-Hop", "Rap"],
                         "spotifyID": "k310"
                     }
                 ]
@@ -107,34 +107,34 @@
                 "songs": [
                     {
                         "name": "SHOWTIME!",
-                        "artist": "JELEEL!",
-                        "album": "SHOWTIME!",
+                        "artist": ["JELEEL!"],
+                        "album": ["SHOWTIME!"],
                         "duration": 120,
-                        "genre": "Rap",
+                        "genre": ["Rap"],
                         "spotifyID": "j120"
                     },
                     {
                         "name": "E-ER (feat. Lil Yachty)",
-                        "artist": "Ski Mask The Slump God",
-                        "album": "FAMILY",
+                        "artist": ["DJ Scheme", "Ski Mask The Slump God", "Danny Towers", "Lil Yachty"],
+                        "album": ["FAMILY"],
                         "duration": 163,
-                        "genre": "Rap",
+                        "genre": ["Rap"],
                         "spotifyID": "s163"
                     },
                     {
                         "name": "Motley Crew",
-                        "artist": "Post Malone",
-                        "album": "Motley Crew",
+                        "artist": ["Post Malone"],
+                        "album": ["Motley Crew"],
                         "duration": 184,
-                        "genre": "Rap",
+                        "genre": ["Rap"],
                         "spotifyID": "p184"
                     },
                     {
                         "name": "family ties (with Kendrick Lamar)",
-                        "artist": "Baby Keem",
-                        "album": "family ties (with Kendrick Lamar)",
+                        "artist": ["Baby Keem", "Kendrick Lamar"],
+                        "album": ["family ties (with Kendrick Lamar)"],
                         "duration": 252,
-                        "genre": "Rap",
+                        "genre": ["Rap"],
                         "spotifyID": "b252"
                     }
                 ]
