@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
     res.redirect('/api/')
 })
 
-app.use('/api/user/', userController)
+app.use('/api/users/', userController)
 app.use('/api/playlist/', playlistController)
 
 app.set('port', process.env.PORT || 8080)
