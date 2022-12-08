@@ -13,7 +13,7 @@ router.get('/', async (req, res, next) => {
 
 router.get('/:id', async (req, res, next) => {
     try {
-        const playlist = await Playlist.findById(req.params.id)
+        const playlist = await Playlist.findById(req.params.id).populate('songs')
         res.json(playlist)
     } catch (err) {
         next(err)
