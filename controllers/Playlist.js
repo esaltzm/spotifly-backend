@@ -11,4 +11,13 @@ router.get('/playlists', async (req, res, next) => {
     }
 })
 
+router.get('/playlists/:id', async (req, res, next) => {
+    try {
+        const playlist = await Playlist.findById(req.params.id)
+        res.json(playlist)
+    } catch (err) {
+        next(err)
+    }
+})
+
 module.exports = router
