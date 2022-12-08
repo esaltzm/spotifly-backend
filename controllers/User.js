@@ -16,7 +16,7 @@ router.get('/', async (req, res, next) => {
 router.get('/:username', async (req, res, next) => {
     try {
         const username = req.params.username
-        const user = await User.findOne({username: username})
+        const user = await User.findOne({ username: username })
         res.json(user)
     }
     catch (err) {
@@ -45,3 +45,5 @@ router.get('/:username', async (req, res, next) => {
 //         next(err)
 //     }
 // })
+
+module.exports = router
