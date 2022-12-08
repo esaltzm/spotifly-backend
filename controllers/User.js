@@ -13,11 +13,10 @@ router.get('/', async (req, res, next) => {
     }
 })
 
-router.get('/:username', async (req, res, next) => {
+router.get('/:id', async (req, res, next) => {
     try {
-        const username = req.params.username
-        const user = await User.findOne({ username: username })
-        res.json(user)
+        const user = await User.findById(req.params.id)
+        user ? res.json(user) : res.sendStatus(404)
     }
     catch (err) {
         next(err)
