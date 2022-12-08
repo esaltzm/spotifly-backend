@@ -20,4 +20,13 @@ router.get('/:id', async (req, res, next) => {
     }
 })
 
+router.post('/', async (req, res, next) => {
+    try {
+        const newPlaylist = await Playlist.create(req.body)
+        res.status(201).json(newPlaylist)
+    } catch (err) {
+        next(err)
+    }
+})
+
 module.exports = router
