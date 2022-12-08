@@ -3,6 +3,7 @@ const express = require('express')
 const cors = require('cors')
 const userController = require('./controllers/User')
 const playlistController = require('./controllers/Playlist')
+const songController = require('./controllers/Song')
 const app = express()
 
 
@@ -16,7 +17,8 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/users/', userController)
-app.use('/api/playlist/', playlistController)
+app.use('/api/playlists/', playlistController)
+app.use('/api/songs', songController)
 
 app.set('port', process.env.PORT || 8080)
 
