@@ -143,6 +143,58 @@
     },
     {
         "username": "mgreen1092",
-        "playlists": []
+        "playlists": [
+            {
+                "name": "Noah Kahan",
+                "songs":[
+                    {
+                        "name": "Stick Season",
+                        "artist": "Noah Kahan",
+                        "album": "Stick Season!",
+                        "duration": 255,
+                        "genre": "Alternative",
+                        "spotifyID": "n001"
+                    },
+                    {
+                        "name": "Northen Attitude",
+                        "artist": "Noah Kahan",
+                        "album": "Stick Season",
+                        "duration": 270,
+                        "genre": "Alternative",
+                        "spotifyID": "n002"
+                    },
+                    {
+                        "name": "Homesick",
+                        "artist": "Noah Kahan",
+                        "album": "Stick Season!",
+                        "duration": 260,
+                        "genre": "Alternative",
+                        "spotifyID": "n003"
+                    }
+                ]
+            },
+            {
+                "name": "Favorites",
+                "songs": [
+                    {
+                        "name": "Homesick",
+                        "artist": "Noah Kahan",
+                        "album": "Stick Season",
+                        "duration": 260,
+                        "genre": "Alternative",
+                        "spotifyID": "f001"
+                    },
+                    {
+                        "name": "die in california",
+                        "artist": "Machine Gun Kelly",
+                        "album": "Mainstrem Sellout",
+                        "duration": 210,
+                        "genre": "Pop-punk",
+                        "spotifyID": "f002"
+                    }                    
+                ]
+            }
+        ]
     }
+
 ]
