@@ -14,7 +14,7 @@ router.get('/', async (req, res, next) => {
 router.get('/:id', async (req, res, next) => {
     try {
         const playlist = await Playlist.findById(req.params.id).populate('songs')
-        res.json(playlist)
+        playlist ? res.json(playlist) : res.sendStatus(404)
     } catch (err) {
         next(err)
     }
