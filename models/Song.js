@@ -25,11 +25,7 @@ const songSchema = new Schema({
     spotifyID: {
         type: String,
         required: true
-    },
-    playlists: [{
-        type: Schema.Types.ObjectId,
-        ref: 'Playlist'
-    }]
+    }
 }, { timestamps: true })
 
 const Song = mongoose.model('Song', songSchema)
