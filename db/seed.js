@@ -107,6 +107,7 @@ const main = async () => {
     await addSongs()
     await linkSongsToPlaylist()
     await linkPlaylistsToUser()
+    process.exit()
 }
 
 main()
