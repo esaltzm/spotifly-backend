@@ -58,8 +58,8 @@ router.put('/:id/add', async (req, res, next) => {
         const playlist = await Playlist.findById(req.params.id)
         req.body._id
             ? songToAdd = await Song.findById(req.body._id)
-            : songToAdd = await Song.create(req.body) //creates JSON circle - must add to Song separately
-        console.log(songToAdd)
+            : res.sendStatus(500)
+        // : songToAdd = await Song.create(req.body) // cannot create song here - creates JSON circle - must add to Song separately
         const newSongs = [...playlist.songs, songToAdd]
         const updatedPlaylist = await Playlist.findByIdAndUpdate(
             req.params.id,
@@ -75,7 +75,9 @@ router.put('/:id/add', async (req, res, next) => {
 router.put('/:id/remove', async (req, res, next) => {
     try {
         const playlist = await Playlist.findById(req.params.id)
-        const newSongs = [...playlist].filter(song => song._id !== req.body.song._id)
+        const newSongs = [...playlist.songs].filter(song => {
+            return song._id != req.body._id
+        })
         const updatedPlaylist = await Playlist.findByIdAndUpdate(
             req.params.id,
             { songs: newSongs },
