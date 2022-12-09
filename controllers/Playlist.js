@@ -40,6 +40,19 @@ router.delete('/:id', async (req, res, next) => {
 
 router.put('/:id/add', async (req, res, next) => {
     try {
+        const updatedPlaylist = Playlist.findByIdAndUpdate(
+            req.params.id,
+            req.body,
+            { new: true }
+        )
+        updatedPlaylist ? res.status(200).json(updatedPlaylist) : res.sendStatus(404)
+    } catch (err) {
+        next(err)
+    }
+})
+
+router.put('/:id/add', async (req, res, next) => {
+    try {
         const playlist = await Playlist.findById(req.params.id)
         const newSongs = [...playlist.songs, req.body.song]
         const updatedPlaylist = await Playlist.findByIdAndUpdate(
