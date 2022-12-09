@@ -23,7 +23,7 @@ router.get('/:id', async (req, res, next) => {
 router.post('/', async (req, res, next) => {
     try {
         const newPlaylist = await Playlist.create(req.body)
-        res.status(201).json(newPlaylist)
+        res.status(201).json(newPlaylist) // add something here to catch missing name field otherwise 500 error
     } catch (err) {
         next(err)
     }
@@ -56,8 +56,7 @@ router.put('/:id/add', async (req, res, next) => {
 router.put('/:id/remove', async (req, res, next) => {
     try {
         const playlist = await Playlist.findById(req.params.id)
-        const song = playlist.find(song => song._id === req.body.song._id)
-        const newSongs = [...playlist].splice(playlist.indexOf(song), 1)
+        const newSongs = [...playlist].filter(song => song._id !== req.body.song._id)
         const updatedPlaylist = await Playlist.findByIdAndUpdate(
             req.params.id,
             { songs: newSongs },
