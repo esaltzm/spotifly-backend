@@ -1,0 +1,200 @@
+[
+    {
+        "username": "esaltzm",
+        "playlists": [
+            {
+                "name": "winter vibes",
+                "songs": [
+                    {
+                        "name": "Kokomo, IN",
+                        "artist": "Japanese Breakfast",
+                        "album": "Jubilee",
+                        "duration": 666,
+                        "genre": "Indie",
+                        "spotifyID": "qwriltqhkwaegu129836"
+                    },
+                    {
+                        "name": "Certainty",
+                        "artist": "Big Thief",
+                        "album": "Dragon New Warm Mountain I Believe In You",
+                        "duration": 420,
+                        "genre": "Folk",
+                        "spotifyID": "awrfgkuykefzuagriew197236"
+                    },
+                    {
+                        "name": "I Know The End",
+                        "artist": "Phoebe Bridgers",
+                        "album": "Punisher",
+                        "duration": 666,
+                        "genre": "Indie",
+                        "spotifyID": "q3894pfhqrf23928347129"
+                    }
+                ]
+            },
+            {
+                "name": "my top songs",
+                "songs": [
+                    {
+                        "name": "Get Into It (Yuh)",
+                        "artist": "Doja Cat",
+                        "album": "Planet Her",
+                        "duration": 666,
+                        "genre": "Pop",
+                        "spotifyID": "2r4q9y842ef1297312"
+                    },
+                    {
+                        "name": "detonate",
+                        "artist": "Charli XCX",
+                        "album": "how i'm feeling now",
+                        "duration": 666,
+                        "genre": "Pop",
+                        "spotifyID": "23r89y21489adfjkadf"
+                    },
+                    {
+                        "name": "Gross",
+                        "artist": "Princess Nokia",
+                        "album": "Everything Sucks",
+                        "duration": 666,
+                        "genre": "Rap",
+                        "spotifyID": "3248472021adhksgfweF"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "username": "aaixn",
+        "playlists": [
+            {
+                "name": "puh",
+                "songs": [
+                    {
+                        "name": "Like You Do",
+                        "artist": ["Joji"],
+                        "album": ["Nectar"],
+                        "duration": 240,
+                        "genre": ["R&B", "Soul"],
+                        "spotifyID": "j240"
+                    },
+                    {
+                        "name": "The Most Beautiful Thing",
+                        "artist": ["Bruno Major"],
+                        "album": ["To Let A Good Thing Die"],
+                        "duration": 235,
+                        "genre": ["Indie"],
+                        "spotifyID": "b235"
+                    },
+                    {
+                        "name": "Good News",
+                        "artist": ["Mac Miller"],
+                        "album": ["Circles", "Circles (Deluxe)"],
+                        "duration": 342,
+                        "genre": ["Hip-Hop", "Rap"],
+                        "spotifyID": "m342"
+                    },
+                    {
+                        "name": "Come to Life",
+                        "artist": ["Kanye West"],
+                        "album": ["Donda"],
+                        "duration": 310,
+                        "genre": ["Hip-Hop", "Rap"],
+                        "spotifyID": "k310"
+                    }
+                ]
+            },
+            {
+                "name": "pung",
+                "songs": [
+                    {
+                        "name": "SHOWTIME!",
+                        "artist": ["JELEEL!"],
+                        "album": ["SHOWTIME!"],
+                        "duration": 120,
+                        "genre": ["Rap"],
+                        "spotifyID": "j120"
+                    },
+                    {
+                        "name": "E-ER (feat. Lil Yachty)",
+                        "artist": ["DJ Scheme", "Ski Mask The Slump God", "Danny Towers", "Lil Yachty"],
+                        "album": ["FAMILY"],
+                        "duration": 163,
+                        "genre": ["Rap"],
+                        "spotifyID": "s163"
+                    },
+                    {
+                        "name": "Motley Crew",
+                        "artist": ["Post Malone"],
+                        "album": ["Motley Crew"],
+                        "duration": 184,
+                        "genre": ["Rap"],
+                        "spotifyID": "p184"
+                    },
+                    {
+                        "name": "family ties (with Kendrick Lamar)",
+                        "artist": ["Baby Keem", "Kendrick Lamar"],
+                        "album": ["family ties (with Kendrick Lamar)"],
+                        "duration": 252,
+                        "genre": ["Rap"],
+                        "spotifyID": "b252"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "username": "mgreen1092",
+        "playlists": [
+            {
+                "name": "Noah Kahan",
+                "songs":[
+                    {
+                        "name": "Stick Season",
+                        "artist": "Noah Kahan",
+                        "album": "Stick Season!",
+                        "duration": 255,
+                        "genre": "Alternative",
+                        "spotifyID": "n001"
+                    },
+                    {
+                        "name": "Northen Attitude",
+                        "artist": "Noah Kahan",
+                        "album": "Stick Season",
+                        "duration": 270,
+                        "genre": "Alternative",
+                        "spotifyID": "n002"
+                    },
+                    {
+                        "name": "Homesick",
+                        "artist": "Noah Kahan",
+                        "album": "Stick Season!",
+                        "duration": 260,
+                        "genre": "Alternative",
+                        "spotifyID": "n003"
+                    }
+                ]
+            },
+            {
+                "name": "Favorites",
+                "songs": [
+                    {
+                        "name": "Homesick",
+                        "artist": "Noah Kahan",
+                        "album": "Stick Season",
+                        "duration": 260,
+                        "genre": "Alternative",
+                        "spotifyID": "f001"
+                    },
+                    {
+                        "name": "die in california",
+                        "artist": "Machine Gun Kelly",
+                        "album": "Mainstrem Sellout",
+                        "duration": 210,
+                        "genre": "Pop-punk",
+                        "spotifyID": "f002"
+                    }                    
+                ]
+            }
+        ]
+    }
+
+]

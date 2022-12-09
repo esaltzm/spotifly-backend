@@ -6,22 +6,22 @@ const songSchema = new Schema({
         type: String,
         required: true
     },
-    artist: {
+    artist: [{
         type: String,
         required: true
-    },
-    album: {
+    }],
+    album: [{
         type: String,
         required: true
-    },
+    }],
     duration: {
         type: Number,
         required: true
     }, // in seconds
-    genre: {
+    genre: [{
         type: String,
         required: true
-    },
+    }],
     spotifyID: {
         type: String,
         required: true
