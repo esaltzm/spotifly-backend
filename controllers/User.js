@@ -43,6 +43,21 @@ router.put('/:id/add', async (req, res, next) => {
     }
 })
 
+router.put('/:id/remove', async (req, res, next) => {
+    try {
+        const user = await User.findById(req.params.id)
+        const newPlaylists = [...user.playlists].filter(playlist => playlist._id != req.body._id)
+        const updatedUser = await User.findByIdAndUpdate(
+            req.params.id,
+            { playlists: newPlaylists },
+            { new: true }
+        )
+        updatedUser ? res.status(201).json(updatedPlaylist) : res.sendStatus(404)
+    } catch (err) {
+        next(err)
+    }
+})
+
 // router.post('/', async (req, res, next) => {
 //     try {
 //         const newUserInfo = req.body
