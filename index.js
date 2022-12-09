@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
-    res.redirect('/api/')
+    res.redirect('/api/users')
 })
 
 app.use('/api/users/', userController)
