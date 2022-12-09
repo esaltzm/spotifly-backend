@@ -32,12 +32,12 @@ router.put('/:id/add', async (req, res, next) => {
             ? playlistToAdd = await Playlist.findById(req.body._id)
             : res.sendStatus(404)
         const newPlaylists = [...user.playlists, playlistToAdd]
-        const updatedUser = await Playlist.findByIdAndUpdate(
+        const updatedUser = await User.findByIdAndUpdate(
             req.params.id,
             { playlists: newPlaylists },
             { new: true }
         )
-        updatedUser ? res.status(201).json(updatedPlaylist) : res.sendStatus(404)
+        updatedUser ? res.status(201).json(updatedUser) : res.sendStatus(404)
     } catch (err) {
         next(err)
     }
