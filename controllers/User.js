@@ -52,7 +52,7 @@ router.put('/:id/remove', async (req, res, next) => {
             { playlists: newPlaylists },
             { new: true }
         )
-        updatedUser ? res.status(201).json(updatedPlaylist) : res.sendStatus(404)
+        updatedUser ? res.status(201).json(updatedUser) : res.sendStatus(404)
     } catch (err) {
         next(err)
     }
