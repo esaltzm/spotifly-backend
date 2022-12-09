@@ -1,6 +1,7 @@
 //controller
 const express = require('express')
 const User = require('../models/User')
+const Playlist = require('../models/Playlist')
 const router = express.Router()
 
 router.get('/', async (req, res, next) => {
@@ -19,6 +20,40 @@ router.get('/:id', async (req, res, next) => {
         user ? res.json(user) : res.sendStatus(404)
     }
     catch (err) {
+        next(err)
+    }
+})
+
+router.put('/:id/add', async (req, res, next) => {
+    try {
+        let playlistToAdd
+        const user = await User.findById(req.params.id)
+        req.body._id
+            ? playlistToAdd = await Playlist.findById(req.body._id)
+            : res.sendStatus(404)
+        const newPlaylists = [...user.playlists, playlistToAdd]
+        const updatedUser = await Playlist.findByIdAndUpdate(
+            req.params.id,
+            { playlists: newPlaylists },
+            { new: true }
+        )
+        updatedUser ? res.status(201).json(updatedPlaylist) : res.sendStatus(404)
+    } catch (err) {
+        next(err)
+    }
+})
+
+router.put('/:id/remove', async (req, res, next) => {
+    try {
+        const user = await User.findById(req.params.id)
+        const newPlaylists = [...user.playlists].filter(playlist => playlist._id != req.body._id)
+        const updatedUser = await User.findByIdAndUpdate(
+            req.params.id,
+            { playlists: newPlaylists },
+            { new: true }
+        )
+        updatedUser ? res.status(201).json(updatedPlaylist) : res.sendStatus(404)
+    } catch (err) {
         next(err)
     }
 })
