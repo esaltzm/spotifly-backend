@@ -1,5 +1,6 @@
 const express = require('express')
 const Playlist = require('../models/Playlist')
+const Song = require('../models/Song')
 const router = express.Router()
 
 router.get('/', async (req, res, next) => {
@@ -38,7 +39,7 @@ router.delete('/:id', async (req, res, next) => {
     }
 })
 
-router.put('/:id/add', async (req, res, next) => {
+router.put('/:id', async (req, res, next) => {
     try {
         const updatedPlaylist = Playlist.findByIdAndUpdate(
             req.params.id,
@@ -53,8 +54,13 @@ router.put('/:id/add', async (req, res, next) => {
 
 router.put('/:id/add', async (req, res, next) => {
     try {
+        let songToAdd
         const playlist = await Playlist.findById(req.params.id)
-        const newSongs = [...playlist.songs, req.body.song]
+        req.body._id
+            ? songToAdd = await Song.findById(req.body._id)
+            : songToAdd = await Song.create(req.body) //creates JSON circle - must add to Song separately
+        console.log(songToAdd)
+        const newSongs = [...playlist.songs, songToAdd]
         const updatedPlaylist = await Playlist.findByIdAndUpdate(
             req.params.id,
             { songs: newSongs },
