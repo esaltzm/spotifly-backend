@@ -1,5 +1,6 @@
 const express = require('express')
 const Playlist = require('../models/Playlist')
+const Song = require('../models/Song')
 const router = express.Router()
 
 router.get('/', async (req, res, next) => {
@@ -13,8 +14,8 @@ router.get('/', async (req, res, next) => {
 
 router.get('/:id', async (req, res, next) => {
     try {
-        const playlist = await Playlist.findById(req.params.id)
-        res.json(playlist)
+        const playlist = await Playlist.findById(req.params.id).populate('songs')
+        playlist ? res.json(playlist) : res.sendStatus(404)
     } catch (err) {
         next(err)
     }
@@ -23,7 +24,7 @@ router.get('/:id', async (req, res, next) => {
 router.post('/', async (req, res, next) => {
     try {
         const newPlaylist = await Playlist.create(req.body)
-        res.status(201).json(newPlaylist)
+        res.status(201).json(newPlaylist) // add something here to catch missing name field otherwise 500 error
     } catch (err) {
         next(err)
     }
@@ -38,10 +39,28 @@ router.delete('/:id', async (req, res, next) => {
     }
 })
 
+router.put('/:id', async (req, res, next) => {
+    try {
+        const updatedPlaylist = Playlist.findByIdAndUpdate(
+            req.params.id,
+            req.body,
+            { new: true }
+        )
+        updatedPlaylist ? res.status(200).json(updatedPlaylist) : res.sendStatus(404)
+    } catch (err) {
+        next(err)
+    }
+})
+
 router.put('/:id/add', async (req, res, next) => {
     try {
+        let songToAdd
         const playlist = await Playlist.findById(req.params.id)
-        const newSongs = [...playlist.songs, req.body.song]
+        req.body._id
+            ? songToAdd = await Song.findById(req.body._id)
+            : res.sendStatus(500)
+        // : songToAdd = await Song.create(req.body) // cannot create song here - creates JSON circle - must add to Song separately
+        const newSongs = [...playlist.songs, songToAdd]
         const updatedPlaylist = await Playlist.findByIdAndUpdate(
             req.params.id,
             { songs: newSongs },
@@ -56,8 +75,9 @@ router.put('/:id/add', async (req, res, next) => {
 router.put('/:id/remove', async (req, res, next) => {
     try {
         const playlist = await Playlist.findById(req.params.id)
-        const song = playlist.find(song => song._id === req.body.song._id)
-        const newSongs = [...playlist].splice(playlist.indexOf(song), 1)
+        const newSongs = [...playlist.songs].filter(song => {
+            return song._id != req.body._id
+        })
         const updatedPlaylist = await Playlist.findByIdAndUpdate(
             req.params.id,
             { songs: newSongs },

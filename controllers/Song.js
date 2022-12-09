@@ -41,10 +41,12 @@ router.delete('/:id', async (req, res, next) => {
 
 router.put('/:id', async (req, res, next) => {
     try {
-        const updateSong = Song.findOneAndUpdate({ _id: req.params.id }, req.body, {
-            new: true
-        })
-        updateSong ? res.status(200).json(updateSong) : res.sendStatus(404)
+        const updatedSong = await Song.findByIdAndUpdate(
+            req.params.id,
+            req.body,
+            { new: true }
+        )
+        updatedSong ? res.status(200).json(updatedSong) : res.sendStatus(404)
     } catch (err) {
         next(err)
     }
