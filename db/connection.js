@@ -5,7 +5,7 @@ require('dotenv').config()
 
 mongoose.Promise = Promise
 
-mongoURI = process.env.DATABASE_URL
+const mongoURI = process.env.DATABASE_URL
 
 mongoose
   .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
