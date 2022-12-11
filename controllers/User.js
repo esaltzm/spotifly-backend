@@ -14,9 +14,9 @@ router.get('/', async (req, res, next) => {
     }
 })
 
-router.get('/:id', async (req, res, next) => {
+router.get('/:username', async (req, res, next) => {
     try {
-        const user = await User.findById(req.params.id).populate('playlists')
+        const user = await User.findOne({ username: req.params.username }).populate('playlists')
         user ? res.json(user) : res.sendStatus(404)
     }
     catch (err) {
