@@ -24,16 +24,16 @@ router.get('/:username', async (req, res, next) => {
     }
 })
 
-router.put('/:id/add', async (req, res, next) => {
+router.put('/:username/add', async (req, res, next) => {
     try {
         let playlistToAdd
-        const user = await User.findById(req.params.id)
+        const user = await User.findOne({ username: req.params.username })
         req.body._id
             ? playlistToAdd = await Playlist.findById(req.body._id)
             : res.sendStatus(404)
         const newPlaylists = [...user.playlists, playlistToAdd]
-        const updatedUser = await User.findByIdAndUpdate(
-            req.params.id,
+        const updatedUser = await User.findOneAndUpdate(
+            { username: req.params.username },
             { playlists: newPlaylists },
             { new: true }
         )
@@ -43,12 +43,12 @@ router.put('/:id/add', async (req, res, next) => {
     }
 })
 
-router.put('/:id/remove', async (req, res, next) => {
+router.put('/:username/remove', async (req, res, next) => {
     try {
-        const user = await User.findById(req.params.id)
+        const user = await User.findOne({ username: req.params.username })
         const newPlaylists = [...user.playlists].filter(playlist => playlist._id != req.body._id)
-        const updatedUser = await User.findByIdAndUpdate(
-            req.params.id,
+        const updatedUser = await User.findOneAndUpdate(
+            { username: req.params.username },
             { playlists: newPlaylists },
             { new: true }
         )
