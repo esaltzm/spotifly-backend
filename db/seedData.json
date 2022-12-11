@@ -11,7 +11,7 @@
                         "album": "Jubilee",
                         "duration": 666,
                         "genre": "Indie",
-                        "spotifyID": "qwriltqhkwaegu129836"
+                        "soundcloud": "https://soundcloud.com/japanesebreakfast/kokomo-in"
                     },
                     {
                         "name": "Certainty",
@@ -19,7 +19,7 @@
                         "album": "Dragon New Warm Mountain I Believe In You",
                         "duration": 420,
                         "genre": "Folk",
-                        "spotifyID": "awrfgkuykefzuagriew197236"
+                        "soundcloud": "https://soundcloud.com/big-thief/certainty"
                     },
                     {
                         "name": "I Know The End",
@@ -27,7 +27,7 @@
                         "album": "Punisher",
                         "duration": 666,
                         "genre": "Indie",
-                        "spotifyID": "q3894pfhqrf23928347129"
+                        "soundcloud": "https://soundcloud.com/phoebebridgers/i-know-the-end"
                     }
                 ]
             },
@@ -40,7 +40,7 @@
                         "album": "Planet Her",
                         "duration": 666,
                         "genre": "Pop",
-                        "spotifyID": "2r4q9y842ef1297312"
+                        "soundcloud": "2r4q9y842ef1297312"
                     },
                     {
                         "name": "detonate",
@@ -48,7 +48,7 @@
                         "album": "how i'm feeling now",
                         "duration": 666,
                         "genre": "Pop",
-                        "spotifyID": "23r89y21489adfjkadf"
+                        "soundcloud": "23r89y21489adfjkadf"
                     },
                     {
                         "name": "Gross",
@@ -56,7 +56,7 @@
                         "album": "Everything Sucks",
                         "duration": 666,
                         "genre": "Rap",
-                        "spotifyID": "3248472021adhksgfweF"
+                        "soundcloud": "3248472021adhksgfweF"
                     }
                 ]
             }
@@ -70,35 +70,63 @@
                 "songs": [
                     {
                         "name": "Like You Do",
-                        "artist": ["Joji"],
-                        "album": ["Nectar"],
+                        "artist": [
+                            "Joji"
+                        ],
+                        "album": [
+                            "Nectar"
+                        ],
                         "duration": 240,
-                        "genre": ["R&B", "Soul"],
-                        "spotifyID": "j240"
+                        "genre": [
+                            "R&B",
+                            "Soul"
+                        ],
+                        "soundcloud": "j240"
                     },
                     {
                         "name": "The Most Beautiful Thing",
-                        "artist": ["Bruno Major"],
-                        "album": ["To Let A Good Thing Die"],
+                        "artist": [
+                            "Bruno Major"
+                        ],
+                        "album": [
+                            "To Let A Good Thing Die"
+                        ],
                         "duration": 235,
-                        "genre": ["Indie"],
-                        "spotifyID": "b235"
+                        "genre": [
+                            "Indie"
+                        ],
+                        "soundcloud": "b235"
                     },
                     {
                         "name": "Good News",
-                        "artist": ["Mac Miller"],
-                        "album": ["Circles", "Circles (Deluxe)"],
+                        "artist": [
+                            "Mac Miller"
+                        ],
+                        "album": [
+                            "Circles",
+                            "Circles (Deluxe)"
+                        ],
                         "duration": 342,
-                        "genre": ["Hip-Hop", "Rap"],
-                        "spotifyID": "m342"
+                        "genre": [
+                            "Hip-Hop",
+                            "Rap"
+                        ],
+                        "soundcloud": "m342"
                     },
                     {
                         "name": "Come to Life",
-                        "artist": ["Kanye West"],
-                        "album": ["Donda"],
+                        "artist": [
+                            "Kanye West"
+                        ],
+                        "album": [
+                            "Donda"
+                        ],
                         "duration": 310,
-                        "genre": ["Hip-Hop", "Rap"],
-                        "spotifyID": "k310"
+                        "genre": [
+                            "Hip-Hop",
+                            "Rap"
+                        ],
+                        "soundcloud": "k310"
                     }
                 ]
             },
@@ -107,35 +135,63 @@
                 "songs": [
                     {
                         "name": "SHOWTIME!",
-                        "artist": ["JELEEL!"],
-                        "album": ["SHOWTIME!"],
+                        "artist": [
+                            "JELEEL!"
+                        ],
+                        "album": [
+                            "SHOWTIME!"
+                        ],
                         "duration": 120,
-                        "genre": ["Rap"],
-                        "spotifyID": "j120"
+                        "genre": [
+                            "Rap"
+                        ],
+                        "soundcloud": "j120"
                     },
                     {
                         "name": "E-ER (feat. Lil Yachty)",
-                        "artist": ["DJ Scheme", "Ski Mask The Slump God", "Danny Towers", "Lil Yachty"],
-                        "album": ["FAMILY"],
+                        "artist": [
+                            "DJ Scheme",
+                            "Ski Mask The Slump God",
+                            "Danny Towers",
+                            "Lil Yachty"
+                        ],
+                        "album": [
+                            "FAMILY"
+                        ],
                         "duration": 163,
-                        "genre": ["Rap"],
-                        "spotifyID": "s163"
+                        "genre": [
+                            "Rap"
+                        ],
+                        "soundcloud": "s163"
                     },
                     {
                         "name": "Motley Crew",
-                        "artist": ["Post Malone"],
-                        "album": ["Motley Crew"],
+                        "artist": [
+                            "Post Malone"
+                        ],
+                        "album": [
+                            "Motley Crew"
+                        ],
                         "duration": 184,
-                        "genre": ["Rap"],
-                        "spotifyID": "p184"
+                        "genre": [
+                            "Rap"
+                        ],
+                        "soundcloud": "p184"
                     },
                     {
                         "name": "family ties (with Kendrick Lamar)",
-                        "artist": ["Baby Keem", "Kendrick Lamar"],
-                        "album": ["family ties (with Kendrick Lamar)"],
+                        "artist": [
+                            "Baby Keem",
+                            "Kendrick Lamar"
+                        ],
+                        "album": [
+                            "family ties (with Kendrick Lamar)"
+                        ],
                         "duration": 252,
-                        "genre": ["Rap"],
-                        "spotifyID": "b252"
+                        "genre": [
+                            "Rap"
+                        ],
+                        "soundcloud": "b252"
                     }
                 ]
             }
@@ -146,14 +202,14 @@
         "playlists": [
             {
                 "name": "Noah Kahan",
-                "songs":[
+                "songs": [
                     {
                         "name": "Stick Season",
                         "artist": "Noah Kahan",
                         "album": "Stick Season!",
                         "duration": 255,
                         "genre": "Alternative",
-                        "spotifyID": "n001"
+                        "soundcloud": "n001"
                     },
                     {
                         "name": "Northen Attitude",
@@ -161,7 +217,7 @@
                         "album": "Stick Season",
                         "duration": 270,
                         "genre": "Alternative",
-                        "spotifyID": "n002"
+                        "soundcloud": "n002"
                     },
                     {
                         "name": "Homesick",
@@ -169,7 +225,7 @@
                         "album": "Stick Season!",
                         "duration": 260,
                         "genre": "Alternative",
-                        "spotifyID": "n003"
+                        "soundcloud": "n003"
                     }
                 ]
             },
@@ -182,7 +238,7 @@
                         "album": "Stick Season",
                         "duration": 260,
                         "genre": "Alternative",
-                        "spotifyID": "f001"
+                        "soundcloud": "f001"
                     },
                     {
                         "name": "die in california",
@@ -190,11 +246,10 @@
                         "album": "Mainstrem Sellout",
                         "duration": 210,
                         "genre": "Pop-punk",
-                        "spotifyID": "f002"
-                    }                    
+                        "soundcloud": "f002"
+                    }
                 ]
             }
         ]
     }
-
 ]
