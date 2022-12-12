@@ -22,7 +22,7 @@ const songSchema = new Schema({
         type: String,
         required: true
     }],
-    spotifyID: {
+    soundcloud: {
         type: String,
         required: true
     }

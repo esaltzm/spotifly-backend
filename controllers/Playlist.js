@@ -41,7 +41,7 @@ router.delete('/:id', async (req, res, next) => {
 
 router.put('/:id', async (req, res, next) => {
     try {
-        const updatedPlaylist = Playlist.findByIdAndUpdate(
+        const updatedPlaylist = await Playlist.findByIdAndUpdate(
             req.params.id,
             req.body,
             { new: true }
