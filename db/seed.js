@@ -7,7 +7,7 @@ const data = require('./seedData.json')
 
 const users = data.map(user => {
     return {
-        username: user.username,
+        email: user.email,
         playlists: []
     }
 })
@@ -84,7 +84,7 @@ const playlistsWithUser = []
 
 data.forEach(user => {
     user.playlists.forEach(playlist => {
-        playlistsWithUser.push({ ...playlist, user: user.username })
+        playlistsWithUser.push({ ...playlist, user: user.email })
     })
 })
 
@@ -93,7 +93,7 @@ const linkPlaylistsToUser = async () => {
     for (let playlist of playlistsWithUser) {
         const found = await Playlist.findOne({ name: playlist.name })
         const updatedUser = await User.findOneAndUpdate(
-            { username: playlist.user },
+            { email: playlist.user },
             { $push: { playlists: found._id } },
             { new: true }
         )
