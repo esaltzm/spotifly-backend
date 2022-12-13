@@ -58,16 +58,16 @@ router.put('/:email/remove', async (req, res, next) => {
     }
 })
 
-// router.post('/', async (req, res, next) => {
-//     try {
-//         const newUserInfo = req.body
-//         const newUser = await User.create(newUserInfo)
-//         res.json(newUser)
-//     }
-//     catch (err) {
-//         next(err)
-//     }
-// })
+router.post('/', async (req, res, next) => {
+    try {
+        const newUserInfo = req.body
+        const newUser = await User.create(newUserInfo)
+        res.json(newUser)
+    }
+    catch (err) {
+        next(err)
+    }
+})
 
 // router.delete('/:email', async (req, res, next) => {
 //     try {
