@@ -57,6 +57,7 @@ Create an account with your email and password to start streaming your favorite 
     - Remove song from playlists
         - Route: /playlists/:id/remove
     - Song information
+        - Route: /songs/:id
 - DELETE
     - Songs
         - Route: /songs/:id
