@@ -1,6 +1,6 @@
 [
     {
-        "username": "esaltzm",
+        "email": "elisaltzman@gmail.com",
         "playlists": [
             {
                 "name": "winter vibes",
@@ -11,7 +11,7 @@
                         "album": "Jubilee",
                         "duration": 666,
                         "genre": "Indie",
-                        "soundcloud": "https://soundcloud.com/japanesebreakfast/kokomo-in"
+                        "soundcloud": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/319745630&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                     },
                     {
                         "name": "Certainty",
@@ -19,7 +19,7 @@
                         "album": "Dragon New Warm Mountain I Believe In You",
                         "duration": 420,
                         "genre": "Folk",
-                        "soundcloud": "https://soundcloud.com/big-thief/certainty"
+                        "soundcloud": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/319745630&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                     },
                     {
                         "name": "I Know The End",
@@ -27,7 +27,7 @@
                         "album": "Punisher",
                         "duration": 666,
                         "genre": "Indie",
-                        "soundcloud": "https://soundcloud.com/phoebebridgers/i-know-the-end"
+                        "soundcloud": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/319745630&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                     }
                 ]
             },
@@ -63,7 +63,7 @@
         ]
     },
     {
-        "username": "aaixn",
+        "email": "aaixn@gmail.com",
         "playlists": [
             {
                 "name": "puh",
@@ -198,7 +198,7 @@
         ]
     },
     {
-        "username": "mgreen1092",
+        "email": "mgreen1092@gmail.com",
         "playlists": [
             {
                 "name": "Noah Kahan",

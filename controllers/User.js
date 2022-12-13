@@ -14,9 +14,9 @@ router.get('/', async (req, res, next) => {
     }
 })
 
-router.get('/:username', async (req, res, next) => {
+router.get('/:email', async (req, res, next) => {
     try {
-        const user = await User.findOne({ username: req.params.username }).populate('playlists')
+        const user = await User.findOne({ email: req.params.email }).populate('playlists')
         user ? res.json(user) : res.sendStatus(404)
     }
     catch (err) {
@@ -24,16 +24,16 @@ router.get('/:username', async (req, res, next) => {
     }
 })
 
-router.put('/:username/add', async (req, res, next) => {
+router.put('/:email/add', async (req, res, next) => {
     try {
         let playlistToAdd
-        const user = await User.findOne({ username: req.params.username })
+        const user = await User.findOne({ email: req.params.email })
         req.body._id
             ? playlistToAdd = await Playlist.findById(req.body._id)
             : res.sendStatus(404)
         const newPlaylists = [...user.playlists, playlistToAdd]
         const updatedUser = await User.findOneAndUpdate(
-            { username: req.params.username },
+            { email: req.params.email },
             { playlists: newPlaylists },
             { new: true }
         )
@@ -43,12 +43,12 @@ router.put('/:username/add', async (req, res, next) => {
     }
 })
 
-router.put('/:username/remove', async (req, res, next) => {
+router.put('/:email/remove', async (req, res, next) => {
     try {
-        const user = await User.findOne({ username: req.params.username })
+        const user = await User.findOne({ email: req.params.email })
         const newPlaylists = [...user.playlists].filter(playlist => playlist._id != req.body._id)
         const updatedUser = await User.findOneAndUpdate(
-            { username: req.params.username },
+            { email: req.params.email },
             { playlists: newPlaylists },
             { new: true }
         )
@@ -58,21 +58,21 @@ router.put('/:username/remove', async (req, res, next) => {
     }
 })
 
-// router.post('/', async (req, res, next) => {
-//     try {
-//         const newUserInfo = req.body
-//         const newUser = await User.create(newUserInfo)
-//         res.json(newUser)
-//     }
-//     catch (err) {
-//         next(err)
-//     }
-// })
+router.post('/', async (req, res, next) => {
+    try {
+        const newUserInfo = req.body
+        const newUser = await User.create(newUserInfo)
+        res.json(newUser)
+    }
+    catch (err) {
+        next(err)
+    }
+})
 
-// router.delete('/:username', async (req, res, next) => {
+// router.delete('/:email', async (req, res, next) => {
 //     try {
-//         const username = req.params.username
-//         const deleteUser = await User.findOneAndDelete({username: username})
+//         const email = req.params.email
+//         const deleteUser = await User.findOneAndDelete({email: email})
 //         res.json(deleteUser)
 //     }
 //     catch {
