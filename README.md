@@ -35,7 +35,11 @@ Create an account with your email and password to start streaming your favorite 
 ### Req Res Cycle
 - GET
     - Get user by email
-        - /user/:email
+        - /users/:email
+    - Get playlists by ID
+        - /playlists/:id
+    - Get songs by ID
+        - /songs/:id
 - POST
 - PUT
 - DELETE
