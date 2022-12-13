@@ -209,7 +209,7 @@
                         "album": "Stick Season!",
                         "duration": 255,
                         "genre": "Alternative",
-                        "soundcloud": "n001"
+                        "soundcloud": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1508774779&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/noahkahan\" title=\"Noah Kahan\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Noah Kahan</a> · <a href=\"https://soundcloud.com/noahkahan/sets/stick-season-2\" title=\"Stick Season\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Stick Season</a></div>"
                     },
                     {
                         "name": "Northen Attitude",
@@ -217,37 +217,9 @@
                         "album": "Stick Season",
                         "duration": 270,
                         "genre": "Alternative",
-                        "soundcloud": "n002"
-                    },
-                    {
-                        "name": "Homesick",
-                        "artist": "Noah Kahan",
-                        "album": "Stick Season!",
-                        "duration": 260,
-                        "genre": "Alternative",
-                        "soundcloud": "n003"
+                        "soundcloud": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1342838488&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/noahkahan\" title=\"Noah Kahan\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Noah Kahan</a> · <a href=\"https://soundcloud.com/noahkahan/sets/stick-season-2\" title=\"Stick Season\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Stick Season</a></div>"
                     }
-                ]
-            },
-            {
-                "name": "Favorites",
-                "songs": [
-                    {
-                        "name": "Homesick",
-                        "artist": "Noah Kahan",
-                        "album": "Stick Season",
-                        "duration": 260,
-                        "genre": "Alternative",
-                        "soundcloud": "f001"
-                    },
-                    {
-                        "name": "die in california",
-                        "artist": "Machine Gun Kelly",
-                        "album": "Mainstrem Sellout",
-                        "duration": 210,
-                        "genre": "Pop-punk",
-                        "soundcloud": "f002"
-                    }
+            
                 ]
             }
         ]
