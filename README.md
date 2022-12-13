@@ -40,10 +40,13 @@ Create an account with your email and password to start streaming your favorite 
         - Route: /playlists/
     - Playlists by ID
         - Route: /playlists/:id
+    - All songs
+        - Route: /songs/
     - Songs by ID
         - Route: /songs/:id
 - POST
-    - Songs added to playlist
+    - Songs
+        - Route: /songs/
     - Playlists
         - Route: /playlists/
 - PUT
