@@ -43,10 +43,14 @@ Create an account with your email and password to start streaming your favorite 
 - POST
     - Songs added to playlist
     - Playlists
-        - Route: /
+        - Route: /playlists/
 - PUT
     - Playlist name
-        - Route: /:id
+        - Route: /playlists/:id
+    - Song to playlist
+        - Route: /playlists/:id/add
+    - Remove song from playlists
+        - Route: /playlists/:id/remove
     - Song information
 - DELETE
     - Songs
