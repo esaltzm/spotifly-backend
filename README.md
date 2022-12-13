@@ -51,6 +51,8 @@ Create an account with your email and password to start streaming your favorite 
         - Route: /songs/
     - Playlists
         - Route: /playlists/
+    - Users
+        - Route: /users/
 - PUT
     - Users
         - Route: /users/:email/add
