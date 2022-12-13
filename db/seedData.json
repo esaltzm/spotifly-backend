@@ -81,7 +81,7 @@
                             "R&B",
                             "Soul"
                         ],
-                        "soundcloud": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/892455199&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                        "soundcloud": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/892455199&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/jojiofficial\" title=\"Joji\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Joji</a> · <a href=\"https://soundcloud.com/jojiofficial/joji-like-you-do\" title=\"Joji - Like You Do\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Joji - Like You Do</a></div>"
                     },
                     {
                         "name": "The Most Beautiful Thing",
@@ -95,7 +95,7 @@
                         "genre": [
                             "Indie"
                         ],
-                        "soundcloud": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/770651692&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                        "soundcloud": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/770651692&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/mrbrunomajor\" title=\"Bruno Major\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Bruno Major</a> · <a href=\"https://soundcloud.com/mrbrunomajor/the-most-beautiful-thing-1\" title=\"The Most Beautiful Thing\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">The Most Beautiful Thing</a></div>"
                     },
                     {
                         "name": "Good News",
@@ -111,7 +111,7 @@
                             "Hip-Hop",
                             "Rap"
                         ],
-                        "soundcloud": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/737554240&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                        "soundcloud": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/737554240&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/larryfisherman\" title=\"Mac Miller\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Mac Miller</a> · <a href=\"https://soundcloud.com/larryfisherman/mac-miller-good-news\" title=\"Mac Miller - Good News\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Mac Miller - Good News</a></div>"
                     },
                     {
                         "name": "Come to Life",
@@ -126,7 +126,7 @@
                             "Hip-Hop",
                             "Rap"
                         ],
-                        "soundcloud": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1114928770&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                        "soundcloud": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1114928770&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/kanyewest\" title=\"Kanye West\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Kanye West</a> · <a href=\"https://soundcloud.com/kanyewest/come-to-life\" title=\"Come to Life\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Come to Life</a></div>"
                     }
                 ]
             },
@@ -145,7 +145,7 @@
                         "genre": [
                             "Rap"
                         ],
-                        "soundcloud": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1140918451&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                        "soundcloud": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1140918451&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/jeleelyussuf\" title=\"JELEEL!\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">JELEEL!</a> · <a href=\"https://soundcloud.com/jeleelyussuf/showtime-prod-by-killthissonny-x-jwade\" title=\"SHOWTIME! (prod by. killthissonny x jwade)\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">SHOWTIME! (prod by. killthissonny x jwade)</a></div>"
                     },
                     {
                         "name": "E-ER (feat. Lil Yachty)",
@@ -162,7 +162,7 @@
                         "genre": [
                             "Rap"
                         ],
-                        "soundcloud": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/941206900&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                        "soundcloud": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/941206900&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/djschemee\" title=\"DJ Scheme\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">DJ Scheme</a> · <a href=\"https://soundcloud.com/djschemee/e-er-feat-ski-mask-the-slump\" title=\"DJ Scheme, Ski Mask the Slump God &amp; Danny Towers - E-ER (feat.  Lil Yachty)\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">DJ Scheme, Ski Mask the Slump God &amp; Danny Towers - E-ER (feat.  Lil Yachty)</a></div>"
                     },
                     {
                         "name": "Motley Crew",
@@ -176,7 +176,7 @@
                         "genre": [
                             "Rap"
                         ],
-                        "soundcloud": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1084381669&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                        "soundcloud": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1084381669&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/postmalone\" title=\"Post Malone\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Post Malone</a> · <a href=\"https://soundcloud.com/postmalone/motley-crew\" title=\"Post Malone - Motley Crew\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Post Malone - Motley Crew</a></div>"
                     },
                     {
                         "name": "family ties (with Kendrick Lamar)",
@@ -191,7 +191,7 @@
                         "genre": [
                             "Rap"
                         ],
-                        "soundcloud": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1113703852&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                        "soundcloud": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1113703852&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/hykeemcarter\" title=\"Baby Keem\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Baby Keem</a> · <a href=\"https://soundcloud.com/hykeemcarter/family-ties\" title=\"family ties (with Kendrick Lamar)\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">family ties (with Kendrick Lamar)</a></div>"
                     }
                 ]
             }
@@ -219,7 +219,6 @@
                         "genre": "Alternative",
                         "soundcloud": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1342838488&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/noahkahan\" title=\"Noah Kahan\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Noah Kahan</a> · <a href=\"https://soundcloud.com/noahkahan/sets/stick-season-2\" title=\"Stick Season\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Stick Season</a></div>"
                     }
-            
                 ]
             }
         ]
