@@ -34,12 +34,21 @@ Create an account with your email and password to start streaming your favorite 
 
 ### Req Res Cycle
 - GET
-    - Get user by email
-        - /users/:email
-    - Get playlists by ID
-        - /playlists/:id
-    - Get songs by ID
-        - /songs/:id
+    - User by email
+        - Route: /users/:email
+    - Playlists by ID
+        - Route: /playlists/:id
+    - Songs by ID
+        - Route: /songs/:id
 - POST
+    - Songs added to playlist
+    - Playlists
+        - Route: /
 - PUT
+    - Playlist name
+        - Route: /:id
+    - Song information
 - DELETE
+    - Songs
+    - Playlists
+        - Route: /:id
