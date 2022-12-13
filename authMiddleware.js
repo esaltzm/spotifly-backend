@@ -15,8 +15,11 @@ class FirebaseAuth {
                 return next()
             }
             return res.status(401).json({ message: 'Unauthorized - stop trying to hack our playlists!!' })
-        } catch (e) {
-            return res.status(500).json({ message: 'Internal Server Error' })
+        } catch (err) {
+            console.log(err)
+            return err.code === 'auth/argument-error'
+                ? res.status(401).json({ message: err.message })
+                : res.status(500).json({ message: 'Internal Server Error' })
         }
     }
 }
