@@ -3,13 +3,13 @@ const cors = require('cors')
 const userController = require('./controllers/User')
 const playlistController = require('./controllers/Playlist')
 const songController = require('./controllers/Song')
+const firebaseAuth = require('./authMiddleware')
 const app = express()
-
-
 
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use(firebaseAuth.authenticate)
 
 app.get('/', (req, res) => {
     res.redirect('/api/users')
