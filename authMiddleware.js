@@ -2,16 +2,21 @@ const admin = require('./db/firebaseConfig')
 
 class FirebaseAuth {
     async authenticate(req, res, next) {
-        const token = req.headers.authorization.split(' ')[1];
+        let token
+        if (req.headers.authorization) {
+            token = req.headers.authorization.split(' ')[1]
+        } else {
+            return res.status(401).json({ message: 'No authentication provided' })
+        }
         try {
             const decodeValue = await admin.auth().verifyIdToken(token);
             if (decodeValue) {
                 console.log(decodeValue)
                 return next()
             }
-            return res.json({ message: 'Unauthorized - stop trying to hack our playlists!!' }).sendStatus(401)
+            return res.status(401).json({ message: 'Unauthorized - stop trying to hack our playlists!!' })
         } catch (e) {
-            return res.json({ message: 'Internal Server Error' }).sendStatus(500)
+            return res.status(500).json({ message: 'Internal Server Error' })
         }
     }
 }
