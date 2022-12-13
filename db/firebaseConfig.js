@@ -6,7 +6,7 @@ const serviceAccount = {
     type: "service_account",
     project_id: "spotifly-2ef38",
     private_key_id: process.env.FIREBASE_PRIVATE_KEY_ID,
-    private_key: process.env.FIREBASE_PRIVATE_KEY,
+    private_key: JSON.parse(process.env.FIREBASE_PRIVATE_KEY).privateKey,
     client_email: "firebase-adminsdk-rloi1@spotifly-2ef38.iam.gserviceaccount.com",
     client_id: process.env.FIREBASE_CLIENT_ID,
     auth_uri: "https://accounts.google.com/o/oauth2/auth",
