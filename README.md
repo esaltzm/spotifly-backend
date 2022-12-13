@@ -34,6 +34,8 @@ Create an account with your email and password to start streaming your favorite 
 
 ### Req Res Cycle
 - GET
+    - Get user by email
+        - /user/:email
 - POST
 - PUT
 - DELETE
