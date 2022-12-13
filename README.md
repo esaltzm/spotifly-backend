@@ -36,6 +36,8 @@ Create an account with your email and password to start streaming your favorite 
 - GET
     - User by email
         - Route: /users/:email
+    - All playlists
+        - Route: /playlists/
     - Playlists by ID
         - Route: /playlists/:id
     - Songs by ID
@@ -45,7 +47,7 @@ Create an account with your email and password to start streaming your favorite 
     - Playlists
         - Route: /playlists/
 - PUT
-    - Playlist name
+    - Playlists
         - Route: /playlists/:id
     - Song to playlist
         - Route: /playlists/:id/add
