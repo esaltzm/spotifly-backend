@@ -61,24 +61,24 @@ Create an account with your email and password, secured with Firebase authentica
 
 - Seeding three related models with data proved difficult - initially, each asynchronous seed function within seed.js was finished executing at random times, resulting in only some of the data being seeded. The solution to this problem was to put each individual seed function within an asynchronous main function, with awaits ensuring that each step was executed before beginning the next step of the seeding process.
 
-    const main = async () => {
-        await addUsers()
-        await addPlaylists()
-        await addSongs()
-        await linkSongsToPlaylist()
-        await linkPlaylistsToUser()
-        process.exit()
-    }
+        const main = async () => {
+            await addUsers()
+            await addPlaylists()
+            await addSongs()
+            await linkSongsToPlaylist()
+            await linkPlaylistsToUser()
+            process.exit()
+        }
 
-- Implementing Firebase authentication using this [tutorial](https://blog.devgenius.io/firebase-authentication-with-custom-node-js-express-backend-2ae9c04571b5) had one bug - there was no method of catching when no authentication was provided with a request from the front end, which would result in an internal server error. To fix this, I added the following code to the authentication middleware to exit the process before attempting to authenticate without a token.
+- Implementing Firebase authentication using this [tutorial](https://blog.devgenius.io/firebase-authentication-with-custom-node-js-express-backend-2ae9c04571b5) had one bug - there was no method of catching when no authentication was provided with a request from the front end, which would result in an internal server error. To fix this, the following code was added to the authentication middleware to exit the process before attempting to authenticate without a token.
 
-    let token
-    if (req.headers.authorization) {
-        console.log(req.headers)
-        token = req.headers.authorization.split(' ')[1]
-    } else {
-        return res.status(401).json({ message: 'No authentication provided' })
-    }
+        let token
+        if (req.headers.authorization) {
+            console.log(req.headers)
+            token = req.headers.authorization.split(' ')[1]
+        } else {
+            return res.status(401).json({ message: 'No authentication provided' })
+        }
 
 ### Future Improvements
 
