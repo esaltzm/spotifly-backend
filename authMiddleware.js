@@ -12,12 +12,10 @@ class FirebaseAuth {
         try {
             const decodeValue = await admin.auth().verifyIdToken(token);
             if (decodeValue) {
-                console.log(decodeValue)
                 return next()
             }
-            return res.status(401).json({ message: 'Unauthorized - stop trying to hack our playlists!!' })
+            return res.status(401).json({ message: 'Unauthorized' })
         } catch (err) {
-            console.log(err)
             return err.code === 'auth/argument-error'
                 ? res.status(401).json({ message: err.message })
                 : res.status(500).json({ message: 'Internal Server Error' })

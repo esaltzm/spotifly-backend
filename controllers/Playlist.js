@@ -59,7 +59,6 @@ router.put('/:id/add', async (req, res, next) => {
         req.body._id
             ? songToAdd = await Song.findById(req.body._id)
             : res.sendStatus(500)
-        // : songToAdd = await Song.create(req.body) // cannot create song here - creates JSON circle - must add to Song separately
         const newSongs = [...playlist.songs, songToAdd]
         const updatedPlaylist = await Playlist.findByIdAndUpdate(
             req.params.id,
